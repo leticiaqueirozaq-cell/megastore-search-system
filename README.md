@@ -1,57 +1,77 @@
 # Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
 
-## Descrição do projeto
+## Descrição do Projeto
 
 Este projeto implementa um sistema de busca otimizado para um catálogo de produtos utilizando a linguagem Rust.
 
-O objetivo é permitir buscas rápidas em grandes volumes de dados utilizando estruturas eficientes como tabelas hash.
+O objetivo é permitir buscas rápidas em grandes volumes de dados utilizando estruturas de dados eficientes, como tabelas hash, melhorando o desempenho das consultas em catálogos de e-commerce.
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
 - Rust
 - Cargo
-- HashMap
+- HashMap (tabela hash)
+- Git
 - GitHub
 
-## Executar o sistema
+## Como Executar o Sistema
+
+1. Clone o repositório:
+
+git clone https://github.com/seuusuario/megastore-search-system
+
+2. Entre na pasta do projeto:
+
+cd megastore-search-system
+
+3. Execute o sistema:
 
 cargo run
 
-## Executar os testes
+## Como Executar os Testes
+
+Para executar os testes automatizados utilize o comando:
 
 cargo test
 
-## Exemplos de uso
+## Exemplos de Uso
 
-Busca por nome do produto.
+Exemplos de consultas que podem ser realizadas no sistema:
 
-Exemplo:
+- Notebook
+- Mouse
+- Teclado
 
-Notebook
-Mouse
-Teclado
+O sistema retorna os produtos encontrados no índice.
 
-## Arquitetura do sistema
+## Arquitetura do Sistema
 
-O sistema possui os seguintes componentes:
+O sistema foi organizado em componentes principais:
 
-- Estrutura Product
-- Indexação com HashMap
-- Sistema de busca
+- **Product**: estrutura que representa um produto.
+- **ProductIndex**: responsável pela indexação dos produtos utilizando HashMap.
+- **Sistema de busca**: realiza consultas no índice.
+- **Main**: executa o sistema.
 
-## Estruturas de dados
+## Algoritmos e Estruturas de Dados
 
-- HashMap
-- Vetores (Vec)
+O sistema utiliza:
 
-## Desempenho
+- **HashMap** para indexação de produtos.
+- **Vec (vetores)** para armazenar listas de produtos associados às chaves.
 
-O uso de HashMap permite buscas com complexidade O(1), tornando o sistema escalável para milhões de produtos.
+A utilização de HashMap permite buscas com complexidade média **O(1)**.
+
+## Considerações de Desempenho e Escalabilidade
+
+O uso de tabelas hash permite que o sistema realize buscas rápidas mesmo em grandes volumes de dados.
+
+Isso torna a solução escalável para catálogos com milhares ou milhões de produtos.
 
 ## Contribuições
 
-Contribuições são bem-vindas através de pull requests.
+Contribuições são bem-vindas através de Pull Requests.
 
 ## Licença
 
-MIT
+Este projeto utiliza a licença MIT.

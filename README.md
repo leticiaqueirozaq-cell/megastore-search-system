@@ -18,7 +18,7 @@ O objetivo é permitir buscas rápidas em grandes volumes de dados utilizando es
 
 1. Clone o repositório:
 
-git clone https://github.com/seuusuario/megastore-search-system
+git clone https://github.com/leticiaqueirozaq-cell/megastore-search-system
 
 2. Entre na pasta do projeto:
 
